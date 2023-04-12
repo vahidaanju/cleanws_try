@@ -6,7 +6,7 @@ pipeline {
      steps {
            sh'cd..'
            sh'ls'
-           sh 'rm -r /var/lib/jenkins/workspace/cleanws_try/cleanws_try@tmp/'
+           sh 'rm -r /var/lib/jenkins/workspace/'
           }
         }
     stage('clone'){
