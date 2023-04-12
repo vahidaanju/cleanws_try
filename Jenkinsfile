@@ -1,10 +1,16 @@
 pipeline {
   agent any 
   stages {
-    
+    stages ('unset proxy') {
+      steps {
+        sh 'git config --global --unset http.proxy'
+        sh 'git config --global user.name "vahidaanju"'
+        sh 'git config --global user.email "vahida.anju@ciyes.com"'
+      }
+    }
     stage('clone'){
       steps{
-        sh'git clone https://github.com/vahidaanju/cleanws_try.git'
+        sh 'git clone https://github.com/vahidaanju/cleanws_try.git'
       }
     }
    
