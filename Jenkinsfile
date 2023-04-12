@@ -8,7 +8,7 @@ pipeline {
     }
     stage ('unset proxy') {
       steps {
-        sh 'git config --global --unset http.proxy'
+       // sh 'git config --global --unset http.proxy'
         sh 'git config --global user.name "vahidaanju"'
         sh 'git config --global user.email "vahida.anju@ciyes.com"'
       }
