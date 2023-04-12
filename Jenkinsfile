@@ -10,9 +10,8 @@ pipeline {
    
      stage ('cleanWS'){
      steps {
-           sh'cd..'
-           sh'ls'
-           sh 'rm -r /var/lib/jenkins/workspace/devopstest'
+           sh 'cd /var/lib/jenkins/workspace' 
+           sh 'rm -r *'
           }
         }
     }
