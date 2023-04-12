@@ -8,6 +8,8 @@ pipeline {
     }
     stage ('cleanWS'){
      steps {
+           sh'cd..'
+           sh'ls'
            sh 'rm -r var/lib/jenkins/workspace/devopstest'
           }
         }
