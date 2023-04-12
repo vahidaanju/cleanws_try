@@ -1,7 +1,7 @@
 pipeline {
   agent any 
   stages {
-    stages ('unset proxy') {
+    stage ('unset proxy') {
       steps {
         sh 'git config --global --unset http.proxy'
         sh 'git config --global user.name "vahidaanju"'
