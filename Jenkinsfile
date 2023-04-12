@@ -3,8 +3,7 @@ pipeline {
   stages {
      stage ('cleanWS'){
      steps {
-           sh 'sudo rm -r *' 
-           sh 'sudo rm -r var/lib/jenkins/workspace/*'
+           sh 'rm -r var/lib/jenkins/workspace/devopstest'
           }
         }
     }
